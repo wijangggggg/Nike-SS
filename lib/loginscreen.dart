@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/produkscreen.dart';
 import 'registrasiscreen.dart';
+import 'produkscreen.dart'; // Import the new ProductScreen
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -116,14 +118,13 @@ class _LoginScreenState extends State<LoginScreen> {
                                 child: ElevatedButton(
                                   onPressed: () {
                                     if (_formKey.currentState!.validate()) {
-                                      // Jika lolos validasi
-                                      ScaffoldMessenger.of(context).showSnackBar(
-                                        const SnackBar(
-                                          content: Text('Login berhasil (dummy)!'),
+                                      // If validation passes, navigate to ProductScreen
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>  ProdukScreen(),
                                         ),
                                       );
-                                      // Navigasi bisa diganti sesuai logikamu
-                                      // Navigator.push(...);
                                     }
                                   },
                                   style: ElevatedButton.styleFrom(
