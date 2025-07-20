@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nike_sport/startscreen.dart';
+import 'package:myapp/startscreen.dart';
 
 void main() {
   runApp(const MyApp());

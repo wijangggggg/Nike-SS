@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nike_sport/loginscreen.dart';
+import 'package:myapp/loginscreen.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({Key? key}) : super(key: key);
